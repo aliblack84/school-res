@@ -3,15 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>SilverBussines - place for your slogan - Home</title>
+<title>وبسایت من</title>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="js/jquery.flow.1.2.min.js"></script>
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="js/jquery.kwicks-1.5.1.pack.js" type="text/javascript"></script>
-<!-- Script section. First of all there is a script which takes care of menu. This menu uses "kwicks jquery plugin". Link to this plugin can be found in help file" 
-Here, we define max width of menuItem after being resized, please dont change these values unless you really know what you are doing" !-->
-<!-- Second part of this script handles upper slogan section by using jFlow plugin. Here we define controller (which is hidden because we dont want it to be visible but it has to be there, and other parameters. Link to jFlow plugin can be found in help file !-->
 <script type="text/javascript">
 	
 		$().ready(function() {
@@ -25,208 +22,91 @@ $(document).ready(function(){
 
 	$("#hidden-controller").jFlow({
 		slides: "#header-slides",
-		controller: ".jFlowControl", // must be class, use . sign
-		slideWrapper : "#jFlowSlide", // must be id, use # sign
-		selectedWrapper: "jFlowSelected",  // 
+		controller: ".jFlowControl", 
+		slideWrapper : "#jFlowSlide", 
+		selectedWrapper: "jFlowSelected",  
 		width: "500px",
 		height: "200px",
 		duration: 400,
-		prev: ".arrow-left", // must be class, use . sign
-		next: ".arrow-right" // must be class, use . sign
+		prev: ".arrow-left", 
+		next: ".arrow-right"
 	});
 });
+
+  function butn() {
+    alert('پیام ارسال شد')
+  }
+</script>
+<script>
+
+
+ 
+
+    
+
+   
 </script>
 </head>
-<!-- This moves the whole pages, 50px down onLoad, to avoid user from having to scroll too much. !-->
 <body onload="window.scrollTo(0,50)">
-<!-- Start of wrapper !-->
+
 <div id="wrapper">
-  <!-- Start of header !-->
-  <div id="header">
-    <div id="top-text">
-      <div id="top-text-left">
-        <p class="top-text">Welcome to <b>Company name </b> website</p>
-      </div>
-      <div id="top-text-right">
-        <p class="top-text"><b>Call us:</b> +12 345 567 | company@company.com</p>
-      </div>
-      <div class="clear"> </div>
-    </div>
-    <!-- Start of main header section !-->
-    <div id="header-bg-left"> </div>
-    <div id="header-main">
-      <div id="header-logo"> <img class="logo" src="images/logo.jpg" alt="company name"/> </div>
-      <div id="divider-header"> </div>
-      <!-- Here is a hidden controller for slogan slides !-->
-      <div id="hidden-controller"> <span class="jFlowControl">Menu1</span> <span class="jFlowControl">Menu1</span> </div>
-      <!-- End of hidden controller !-->
-      <div id="header-about">
-        <!-- Previous button !-->
-        <img src="images/arrow_left.jpg" class="arrow-left"/>
-        <!-- Start of slides !-->
-        <div id="header-slides">
-          <!-- Start of first slide !-->
-          <div> <img src="images/icon1.jpg" class="header-icon" />
-            <div class="header-about-main"> <img class="header-heading" src="images/header1.jpg" />
-              <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla ante eget est. Praesent sapien urna, 	euismod vitae, sodales sit amet, fringilla non, odio. Pellentesque viverra libero id metus. Nulla porta arcu eget metus. Proin volutpat aliquam risus.</p>
-            </div>
-          </div>
-          <!-- End of first slide !-->
-          <!-- Start of second slide !-->
-          <div> <img src="images/icon1.jpg" class="header-icon" />
-            <div class="header-about-main"> <img class="header-heading" src="images/header1.jpg" />
-              <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla ante eget est. Praesent sapien urna, euismod vitae, sodales sit amet, fringilla non, odio. Pellentesque viverra libero id metus. Nulla porta arcu eget metus. Proin volutpat aliquam risus.</p>
-            </div>
-          </div>
-          <!-- End of second slide !-->
-        </div>
-        <img src="images/arrow_right.jpg" alt="next-service" class="arrow-right"/>
-        <!-- End of slides !-->
-      </div>
-      <!-- End of About header div !-->
-      <div class="clear"> </div>
-    </div>
-    <div id="header-bg-right"> </div>
-    <!--End of header main section !-->
-    <div class="clear"> </div>
-  </div>
-  <!-- End of header !-->
-  <!-- Start of navigation !-->
+
   <div id="navigation">
     <div id="nav-bg-left"> </div>
     <div id="nav-main">
-      <!-- Start of nav Items UL !-->
+
       <ul class="kwicks">
         <li id="kwick1"><a href="index-2.html"><img src="images/home.jpg" alt="Go to home section"/></a></li>
         <li id="kwick2"><a href="about-us.html" ><img src="images/about-us.jpg" alt="Go to abous us section" /></a></li>
         <li id="kwick5"><img src="images/contact.jpg" alt="Go to contact section" /></li>
       </ul>
-      <!-- End of nav Item UL !-->
-      <!-- Start of searrch part !-->
+
       <div class="search">
         <input class="input-text" type="text"/>
         <button type="submit" class="submit-button">Search this site</button>
       </div>
-      <!-- End of search part !-->
       <div class="clear"></div>
     </div>
     <div id="nav-bg-right"> </div>
     <div class="clear"> </div>
   </div>
-  <!-- End of navigation !-->
-  <!-- Start of wrapper main Content !-->
+
   <div id="wrapper-content">
     <div id="mainContent">
       <div id="maincontent-bg-top"> </div>
       <div id="maincontent-main">
-        <!-- Maincontent-main-core is the part of maincontent without sidebar !-->
         <div id="maincontent-main-core">
-          <!-- Heading, uses p with clas="section-name" !-->
           <h1>Contact us</h1>
           <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Cras sed eros eget nunc tempor tincidunt. Vestibulum rhoncus. Aenean quis libero id ante mattis dictum. Nulla sagittis lorem nec magna.</p>
-          <!-- Following div encapsulates main Info options on contact page, number address etc !-->
-          <div id="contact-maininfo">
-            <h2>Contact Info</h2>
-            <p class="contact-main-info"><b>Company Name Inc</b><br />
-              09 Janko Road <br />
-              04801 Slovakia</p>
-            <div class="clear"></div>
-            <br />
-            <p class="sidebar-contact-info"><b>tel.:</b> +123 456 678 / +123 444 555</p>
-            <br />
-            <p class="sidebar-contact-info"><b>mail:</b> company@company.com</p>
-            <div class="clear"></div>
-          </div>
-          <!-- Here follows contact form !-->
           <div id="contact-form">
-            <h2>Contact form </h2>
-            <form action="http://themes.udesignstudios.net/silverbussines/contactengine.php" method="post" class="contact-form-all">
+            <h2>ارسال نظر </h2>
+            <form  method="post" class="contact-form-all">
               <fieldset class="contact-fieldset">
-                <label for="contact-name" class="contact-label">Your name:</label>
+                <label for="contact-name" class="contact-label">نام:</label>
                 <input id="contact-name" type="text" class="contact-input" name="contact-name"/>
                 <br />
                 <br />
-                <label for="contact-email" class="contact-label">Your email:</label>
+                <label for="contact-email" class="contact-label">ایمیل:</label>
                 <input name="contact-email" id="contact-email" type="text" class="contact-input" />
                 <br />
                 <br />
-                <label for="contact-subject" class="contact-label">Subject of your message </label>
-                <select name="Subject" id="contact-subject" class="contact-select">
-                  <option value="Bussines">Bussines enquiry</option>
-                  <option value="personal">Personal enquiry</option>
-                  <option value="other">Other</option>
-                </select>
-                <br />
-                <br />
-                <label for="contact-body" class="contact-label">Your Message:</label>
+                <label for="contact-body" class="contact-label">پیشنهاد شما:</label>
                 <textarea class="contact-body" id="contact-body" name="contact-body" rows="6" cols="27"></textarea>
                 <br />
                 <div class="clear"></div>
-                <button type="submit" class="contact-button">Send</button>
+                <button onclick="butn()" >ارسال</button>
+             
               </fieldset>
             </form>
-            <!-- End of contact form !-->
           </div>
         </div>
-        <!-- End of maincontent-main-core !-->
-        <!-- Start of sidebar !-->
-        <div id="maincontent-main-sidebar">
-          <!-- class sidebar here is used for every single one sidebar group (quick contact, news, etc) !-->
-          <div class="sidebar">
-            <div class="sidebar-bg-top"> </div>
-            <!-- header is stored in Jpeg file !-->
-            <div class="sidebar-main"> <img class="img-sidebar-header" src="images/latest-news.jpg"/>
-              <p class="sidebar-text"><b>Lorem ipsum dolor heading</b><br />
-                Suspendisse ut arcu in sapien tempor euismod. Nunc posuere magna vitae sapien. Integer elit diam, fermentum a, fringilla et, euismod in, elit.</p>
-              <br />
-              <p class="sidebar-text"><b>Lorem ipsum dolor heading</b><br />
-                Suspendisse ut arcu in sapien tempor euismod. Nunc posuere magna vitae sapien. Integer elit diam, fermentum a, fringilla et, euismod in, elit.</p>
-            </div>
-            <div class="sidebar-bg-bottom"> </div>
-            <div class="clear"> </div>
-          </div>
-          <div class="sidebar">
-            <div class="sidebar-bg-top"> </div>
-            <div class="sidebar-main"> <img class="img-sidebar-header" src="images/quick-contact.jpg"/><br />
-              <div class="sidebar-contact-line"> <img class="img-sidebar-contact" src="images/newspaper.jpg" alt="call us" />
-                <p class="sidebar-contact-info"><b>Company Name Inc</b><br />
-                  09 Janko Road | 04801 Slovakia</p>
-                <br />
-              </div>
-              <br />
-              <div class="sidebar-contact-line"> <img class="img-sidebar-contact" src="images/phone.jpg" alt="call us" />
-                <p class="sidebar-contact-info"> +12 345 567 456</p>
-              </div>
-              <br />
-              <div class="sidebar-contact-line"> <img class="img-sidebar-contact" src="images/mail.jpg" alt="call us" />
-                <p class="sidebar-contact-info">company@company.com</p>
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="sidebar-bg-bottom"> </div>
-            <div class="clear"> </div>
-          </div>
-        </div>
+       
         <div class="clear"></div>
       </div>
-      <!-- End of sidebar !-->
       <div id="maincontent-bg-bottom"> </div>
     </div>
-    <!-- End of maincontent !-->
   </div>
-  <!-- End of wrapper maincontent !-->
-  <!-- Start of footer !-->
- <div id="footer">
-    <div id="footer-bg-top"> </div>
-    <div id="footer-main">
-      <p class="footer-text-left">Copyright 2009 Company Name | Valid <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.udesign.sk%2Fthemes%2Fsilverbussines%2F">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.udesign.sk%2Fthemes%2Fsilverbussines%2F">CSS</a> | Website designed by <a href="http://www.udesign.sk/">udesign.sk</a>. Made with love on Mac.</p>
-      <p class="footer-text-right"><b>Hotline: </b>+123 345 567</p>
-      <div class="clear"></div>
-    </div>
-    <div id="footer-bg-bottom"> </div>
-  </div>
-  <!-- End of wrapper maincontent !-->
+
 </div>
-<!-- End of wrapper !-->
 </body>
 </html>
